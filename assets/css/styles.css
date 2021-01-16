@@ -12,9 +12,9 @@ div.navbar ul li a { display: block; margin: 0 auto; text-align: center; font-si
 
 div.navbar ul li a:hover { text-decoration: none; color: #01295F; }
 
-div.navbar ul li a:active { text-decoration: none; color: #F3CA40; }
+div.navbar ul li a:active { text-decoration: none; color: #01295F; }
 
-div.navbar ul li a.selected { text-decoration: none; color: #01295F; }
+div.navbar ul li a.selected { text-decoration: none; color: #F3CA40; }
 
 div.main-content { float: right; padding-top: 5%; clear: both; margin-left: 10%; font-family: "Ropa Sans", sans-serif !important; font-size: large; }
 
