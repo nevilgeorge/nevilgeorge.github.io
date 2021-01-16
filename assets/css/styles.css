@@ -8,26 +8,26 @@ div.navbar ul { padding-inline-start: 0px; }
 
 div.navbar ul li { display: inline; text-align: center; }
 
-div.navbar ul li a { display: block; margin: 0 auto; text-align: center; font-size: 25px; color: #507DBC; text-decoration: none; margin-top: 2%; }
+div.navbar ul li a { display: block; margin: 0 auto; text-align: center; font-size: 25px; color: #522B47; text-decoration: none; margin-top: 2%; }
 
-div.navbar ul li a:hover { text-decoration: none; color: #E54B4B; }
+div.navbar ul li a:hover { text-decoration: none; color: #507DBC; }
 
-div.navbar ul li a:active { text-decoration: none; color: #522B47; }
+div.navbar ul li a:active { text-decoration: none; color: #E54B4B; }
 
-div.navbar ul li a.selected { text-decoration: none; color: #E54B4B; }
+div.navbar ul li a.selected { text-decoration: none; color: #507DBC; }
 
 div.main-content { float: right; padding-top: 5%; clear: both; margin-left: 10%; font-family: "Ropa Sans", sans-serif !important; font-size: large; }
 
-div.main-content h1 { color: #522B47; }
+div.main-content h1 { color: #E54B4B; }
 
-div.main-content p { color: #E54B4B; margin-top: 1%; }
+div.main-content p { color: #507DBC; margin-top: 1%; }
 
 div.main-content p a { color: inherit; }
 
-div#experience h2 { margin-top: 2%; margin-bottom: 0; color: #507DBC; }
+div#experience h2 { margin-top: 2%; margin-bottom: 0; color: #522B47; }
 
-div#experience h3 { margin-top: 0; margin-bottom: 0; color: #507DBC; }
+div#experience h3 { margin-top: 0; margin-bottom: 0; color: #522B47; }
 
-div#experience h5 { margin-top: 0; margin-bottom: 0; color: #507DBC; }
+div#experience h5 { margin-top: 0; margin-bottom: 0; color: #522B47; }
 
 /*# sourceMappingURL=styles.css.map */
