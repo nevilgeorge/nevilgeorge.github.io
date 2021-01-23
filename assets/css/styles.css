@@ -30,4 +30,16 @@ div#experience h3 { margin-top: 0; margin-bottom: 0; color: #A23B72; }
 
 div#experience h5 { margin-top: 0; margin-bottom: 0; color: #A23B72; }
 
+div#readings .green-text { color: #517664; }
+
+div#readings ul { margin-top: 7.5%; list-style: square; }
+
+div#readings ul li { color: #01295F; margin: 2%; }
+
+div#readings ul li a { color: inherit; }
+
+div#readings ul li .reading-author { font-size: 85%; }
+
+div#readings ul li .reading-subtitle { font-size: 95%; }
+
 /*# sourceMappingURL=styles.css.map */
