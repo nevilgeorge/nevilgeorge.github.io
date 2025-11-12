@@ -5,6 +5,11 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
+		paths: {
+			// Use environment variable for base path, default to empty string for user pages
+			// For project pages, set BASE_PATH=/repository-name in GitHub Actions
+			base: process.env.BASE_PATH || ''
+		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
