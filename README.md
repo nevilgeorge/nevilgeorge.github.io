@@ -1,5 +1,7 @@
 SvelteKit-powered personal website/blog.
 
+> Deployed via GitHub Actions to GitHub Pages.
+
 # Development
 
 ### Start serving locally:
