@@ -8,7 +8,7 @@
 
 <div class="main-body pure-g">
 	<Navigation />
-	<div id={pageTitle} class="pure-u-2-5 main-content">
+	<div id={pageTitle} class="pure-u-4-5 main-content">
 		<slot />
 	</div>
 </div>

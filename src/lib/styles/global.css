@@ -1,134 +1,362 @@
-/* Color scheme: https://coolors.co/01295f-f3ca40-517664-a23b72-eee5e9 */
+/* Modern color scheme - Light and fresh */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap');
+
 :root {
-	--lavender: #eee5e9;
-	--purple: #a23b72;
-	--crayola: #f3ca40;
-	--dark-blue: #01295f;
-	--green: #517664;
-	--font-size: 2em;
-	--default-font: 'Ropa Sans', sans-serif;
+	/* Colors */
+	--bg-primary: #fafafa;
+	--bg-secondary: #ffffff;
+	--text-primary: #1e293b;
+	--text-secondary: #475569;
+	--text-muted: #64748b;
+	--accent: #6366f1;
+	--accent-hover: #4f46e5;
+	--pop: #f43f5e;
+	--pop-secondary: #fb923c;
+	--success: #10b981;
+	--border: #e2e8f0;
+	
+	/* Gradients */
+	--gradient-pop: linear-gradient(135deg, var(--pop) 0%, var(--pop-secondary) 100%);
+	--gradient-accent: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
+	
+	/* Typography */
+	--font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	--font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-lg: 1.125rem;
+	--font-size-xl: 1.25rem;
+	--font-size-2xl: 1.5rem;
+	--font-size-3xl: 2rem;
+	
+	/* Spacing */
+	--spacing-xs: 0.25rem;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
+	--spacing-2xl: 3rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+body * {
+	font-family: var(--font-serif);
 }
 
 body {
-	font-family: var(--default-font) !important;
+	font-size: var(--font-size-base);
+	line-height: 1.7;
+	color: var(--text-primary);
+	background-color: var(--bg-primary);
 	padding: 0;
 	margin: 0;
-	background-color: var(--lavender);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 div.main-body {
 	width: 100%;
-	height: 100%;
+	min-height: 100vh;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: var(--spacing-xl);
 }
 
 /* Navbar styling */
 div.navbar {
-	float: left;
-	padding-top: 10%;
-	clear: both;
-	font-family: var(--default-font) !important;
+	padding-top: var(--spacing-2xl);
 }
 
 div.navbar ul {
-	padding-inline-start: 0px;
+	padding-inline-start: 0;
+	list-style: none;
 }
 
 div.navbar ul li {
-	display: inline;
-	text-align: center;
+	display: block;
 }
 
 div.navbar ul li a {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 25px;
-	color: var(--purple);
+	display: inline-block;
+	font-size: var(--font-size-lg);
+	font-weight: 500;
+	color: var(--text-secondary);
 	text-decoration: none;
-	margin-top: 2%;
+	padding: var(--spacing-sm) 0;
+	transition: color 0.2s ease, transform 0.2s ease;
+	position: relative;
+}
+
+div.navbar ul li a::before {
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: var(--gradient-pop);
+	transition: width 0.3s ease;
 }
 
 div.navbar ul li a:hover {
-	text-decoration: none;
-	color: var(--dark-blue);
+	color: var(--pop);
 }
 
-div.navbar ul li a:active {
-	text-decoration: none;
-	color: var(--dark-blue);
+div.navbar ul li a:hover::before {
+	width: 100%;
 }
 
 div.navbar ul li a.selected {
-	text-decoration: none;
-	color: var(--crayola);
+	color: var(--pop);
+	font-weight: 600;
+}
+
+div.navbar ul li a.selected::before {
+	width: 100%;
 }
 
 /* Common main-content styling */
 div.main-content {
-	float: right;
-	padding-top: 5%;
-	clear: both;
-	margin-left: 10%;
-	font-family: var(--default-font) !important;
-	font-size: large;
+	padding-top: var(--spacing-2xl);
+	padding-left: var(--spacing-2xl);
 }
 
 div.main-content h1 {
-	color: var(--crayola);
+	font-family: var(--font-serif);
+	font-size: var(--font-size-3xl);
+	font-weight: 500;
+	color: var(--text-primary);
+	margin: 0 0 var(--spacing-lg) 0;
+	letter-spacing: -0.02em;
+	position: relative;
+	display: inline-block;
+}
+
+div.main-content h1::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 60px;
+	height: 4px;
+	background: var(--gradient-pop);
+	border-radius: 2px;
 }
 
 div.main-content p {
-	color: var(--dark-blue);
-	margin-top: 1%;
+	color: var(--text-secondary);
+	margin: var(--spacing-md) 0;
+	max-width: 600px;
+}
+
+div.main-content p strong {
+	color: var(--text-primary);
+	font-weight: 600;
+	background: linear-gradient(135deg, var(--pop) 0%, var(--pop-secondary) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
 div.main-content p a {
-	color: inherit;
+	color: var(--accent);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s ease;
+	background: linear-gradient(to right, var(--pop), var(--pop-secondary));
+	background-size: 0% 2px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-bottom: 2px;
+}
+
+div.main-content p a:hover {
+	color: var(--pop);
+	background-size: 100% 2px;
 }
 
 /* Experience page styling */
 div#experience h2 {
-	margin-top: 2%;
-	margin-bottom: 0;
-	color: var(--purple);
+	font-family: var(--font-serif);
+	font-size: var(--font-size-xl);
+	font-weight: 500;
+	margin: var(--spacing-xl) 0 var(--spacing-xs) 0;
+	color: var(--text-primary);
+	position: relative;
+	display: block;
+	width: fit-content;
+}
+
+div#experience h2::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 30px;
+	height: 3px;
+	background: var(--gradient-accent);
+	border-radius: 2px;
 }
 
 div#experience h3 {
-	margin-top: 0;
-	margin-bottom: 0;
-	color: var(--purple);
+	font-size: var(--font-size-base);
+	font-weight: 500;
+	margin: 0;
+	color: var(--text-secondary);
 }
 
 div#experience h5 {
-	margin-top: 0;
-	margin-bottom: 0;
-	color: var(--purple);
+	font-size: var(--font-size-sm);
+	font-weight: 400;
+	margin: var(--spacing-xs) 0 var(--spacing-sm) 0;
+	color: var(--text-muted);
+}
+
+div#experience p {
+	font-size: var(--font-size-sm);
+	line-height: 1.6;
 }
 
 /* Readings page styling */
 div#readings .green-text {
-	color: var(--green);
+	color: var(--success);
+	font-weight: 500;
 }
 
 div#readings ul {
-	margin-top: 7.5%;
-	list-style: square;
+	margin-top: var(--spacing-xl);
+	padding-left: var(--spacing-lg);
+	list-style: none;
 }
 
 div#readings ul li {
-	color: var(--dark-blue);
-	margin: 2%;
+	color: var(--text-secondary);
+	margin-bottom: var(--spacing-lg);
+	padding-left: var(--spacing-md);
+	border-left: 3px solid var(--border);
+	transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+div#readings ul li:hover {
+	border-left-color: var(--pop);
+	transform: translateX(4px);
 }
 
 div#readings ul li a {
-	color: inherit;
+	color: var(--text-primary);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s ease;
+}
+
+div#readings ul li a:hover {
+	color: var(--pop);
 }
 
 div#readings ul li .reading-author {
-	font-size: 85%;
+	font-size: var(--font-size-sm);
+	color: var(--text-muted);
+	margin: var(--spacing-xs) 0 0 0;
 }
 
 div#readings ul li .reading-subtitle {
-	font-size: 95%;
+	font-size: var(--font-size-sm);
+	color: var(--text-muted);
 }
 
+/* Writings page styling */
+div#writings ul {
+	list-style: none;
+	padding: 0;
+	margin-top: var(--spacing-xl);
+}
+
+div#writings ul li {
+	margin-bottom: var(--spacing-lg);
+	padding: var(--spacing-lg);
+	background: var(--bg-secondary);
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+div#writings ul li::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background: var(--gradient-pop);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+div#writings ul li:hover {
+	border-color: var(--pop);
+	box-shadow: 0 8px 24px rgba(244, 63, 94, 0.12);
+	transform: translateY(-2px);
+}
+
+div#writings ul li:hover::before {
+	opacity: 1;
+}
+
+div#writings ul li h2 {
+	font-family: var(--font-serif);
+	font-size: var(--font-size-lg);
+	font-weight: 500;
+	margin: 0 0 var(--spacing-sm) 0;
+}
+
+div#writings ul li h2 a {
+	color: var(--text-primary);
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.2s ease;
+}
+
+div#writings ul li h2 a:hover {
+	color: var(--pop);
+}
+
+div#writings ul li p {
+	font-size: var(--font-size-sm);
+	color: var(--text-muted);
+	margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	div.main-body {
+		padding: var(--spacing-md);
+	}
+	
+	div.navbar {
+		padding-top: var(--spacing-lg);
+		float: none;
+		width: 100%;
+	}
+	
+	div.navbar ul li {
+		display: inline-block;
+		margin-right: var(--spacing-md);
+	}
+	
+	div.main-content {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		padding-top: var(--spacing-lg);
+	}
+	
+	div.main-content h1 {
+		font-size: var(--font-size-2xl);
+	}
+}

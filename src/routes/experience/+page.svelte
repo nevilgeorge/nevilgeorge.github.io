@@ -7,13 +7,21 @@
 
 <h1 class="page-title">experience</h1>
 
+<h2>datadog, inc</h2>
+<h3>product manager</h3>
+<h5>sept '24 - sept '25</h5>
+<p>
+	building application performance monitoring (APM) products for serverless environments as owner of the APM Serverless SKU.
+</p>
+
 <h2>uber technologies, inc</h2>
 <h3>senior software engineer</h3>
-<h5>sept '16 - present</h5>
+<h5>sept '16 - aug '22</h5>
 <p>
-	2 years building an ML platform for ETA predictions, and a year building the next-gen routing engine for Uber.
-	Then I moved to Amsterdam to build the payments storage platform and migrate 2TB of
-	user payment data. Now, I work on merchant-facing pricing products for UberEats.
+	2 years building an ML platform for ETA predictions (San Francisco).
+	1 year building the next-gen routing engine for Uber (San Francisco).
+	2 years building the payments storage platform and migrating 2TB of user payment data (Amsterdam).
+	1 year working on both merchant-facing and eater-facing pricing products for UberEats (San Francisco).
 </p>
 <p>
 	I enjoy deep platform challenges, and I'm especially interested in distributed systems and databases.

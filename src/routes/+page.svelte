@@ -10,18 +10,16 @@
 	Hi, I'm <strong>Nevil</strong>.
 </p>
 <p>
-	I work as a software engineer at <strong>Uber</strong>.
-	I spent my first 3 years working in the Maps domain,
-	1.5 years in Payments, and now in Pricing.
+	I work at <strong><a href="https://withforge.com" target="_blank">Forge</a></strong>.
 </p>
 <p>
-	Prior to Uber, I was an engineering student at <strong>Northwestern</strong>.
+	Prior to Forge, I was a PM at <strong>Datadog</strong> and a SWE at <strong>Uber</strong>.
 </p>
 <p>
-	I live in <strong>Oakland</strong>. I've also lived in Maputo, Mbabane, Chicagoland, San Francisco, Amsterdam.
+	I live in <strong>San Francisco</strong>. I've also lived in Maputo, Mbabane, Chicago, Oakland, Amsterdam, Boston and New York.
 </p>
 <p>
-	I'm interested in creating economic opportunity through technology, exploring electronic music and learning about what motivates people. I also enjoy <a href="/readings">reading</a> widely, and I'm always open to <a href="mailto:liven93@gmail.com" target="_blank">recommendations</a>.
+	My professional interests lie in wearing many hats to build durable, tech-enabled businesses.
 </p>
 <p>
 	Find me on
