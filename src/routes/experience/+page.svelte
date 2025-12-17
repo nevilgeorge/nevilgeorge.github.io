@@ -9,7 +9,7 @@
 
 <h2>datadog, inc</h2>
 <h3>product manager</h3>
-<h5>sept '24 - sept '25</h5>
+<h5>july '24 - sept '25</h5>
 <p>
 	building application performance monitoring (APM) products for serverless environments as owner of the APM Serverless SKU.
 </p>
