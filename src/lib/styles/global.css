@@ -5,15 +5,15 @@
 	/* Colors */
 	--bg-primary: #fafafa;
 	--bg-secondary: #ffffff;
-	--text-primary: #1e293b;
-	--text-secondary: #475569;
-	--text-muted: #64748b;
-	--accent: #6366f1;
-	--accent-hover: #4f46e5;
-	--pop: #f43f5e;
-	--pop-secondary: #fb923c;
+	--text-primary: #3D2F5C;
+	--text-secondary: #6B5A8A;
+	--text-muted: #9488B0;
+	--accent: #7B6BA8;
+	--accent-hover: #6A5A97;
+	--pop: #7B6BA8;
+	--pop-secondary: #6A5A97;
 	--success: #10b981;
-	--border: #e2e8f0;
+	--border: #C8CAD8;
 	
 	/* Gradients */
 	--gradient-pop: linear-gradient(135deg, var(--pop) 0%, var(--pop-secondary) 100%);
@@ -164,19 +164,13 @@ div.main-content p strong {
 
 div.main-content p a {
 	color: var(--accent);
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: 500;
 	transition: color 0.2s ease;
-	background: linear-gradient(to right, var(--pop), var(--pop-secondary));
-	background-size: 0% 2px;
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	padding-bottom: 2px;
 }
 
 div.main-content p a:hover {
 	color: var(--pop);
-	background-size: 100% 2px;
 }
 
 /* Experience page styling */
@@ -248,7 +242,7 @@ div#readings ul li:hover {
 
 div#readings ul li a {
 	color: var(--text-primary);
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: 500;
 	transition: color 0.2s ease;
 }
@@ -300,7 +294,7 @@ div#writings ul li::before {
 
 div#writings ul li:hover {
 	border-color: var(--pop);
-	box-shadow: 0 8px 24px rgba(244, 63, 94, 0.12);
+	box-shadow: 0 8px 24px rgba(123, 107, 168, 0.12);
 	transform: translateY(-2px);
 }
 
@@ -317,7 +311,7 @@ div#writings ul li h2 {
 
 div#writings ul li h2 a {
 	color: var(--text-primary);
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: 600;
 	transition: color 0.2s ease;
 }
