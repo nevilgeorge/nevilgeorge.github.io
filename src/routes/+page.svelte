@@ -16,7 +16,7 @@
 	Prior to Forge, I was a PM at <strong>Datadog</strong> and a SWE at <strong>Uber</strong>.
 </p>
 <p>
-	I live in <strong>San Francisco</strong>. I've also lived in Maputo, Mbabane, Chicago, Oakland, Amsterdam, Boston and New York.
+	I live in <strong>New York</strong>. I've also lived in Maputo, Mbabane, Chicago, San Francisco, Oakland, Amsterdam and Boston.
 </p>
 <p>
 	My professional interests lie in wearing many hats to build durable, tech-enabled businesses.
