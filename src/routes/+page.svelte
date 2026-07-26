@@ -10,13 +10,10 @@
 	Hi, I'm <strong>Nevil</strong>.
 </p>
 <p>
-	I work at <strong><a href="https://withforge.com" target="_blank">Forge</a></strong>.
+	I work at <strong><a href="https://poetic.com" target="_blank">Poetic</a></strong>.
 </p>
 <p>
-	Prior to Forge, I was a PM at <strong>Datadog</strong> and a SWE at <strong>Uber</strong>.
-</p>
-<p>
-	I live in <strong>New York</strong>. I've also lived in Maputo, Mbabane, Chicago, San Francisco, Oakland, Amsterdam and Boston.
+	Prior to Poetic, I was a PM at <strong>Datadog</strong> and a SWE at <strong>Uber</strong>.
 </p>
 <p>
 	My professional interests lie in wearing many hats to build durable, tech-enabled businesses.
